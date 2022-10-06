@@ -1,0 +1,111 @@
+body
+{
+    margin: 0;
+}
+section#nav
+{
+    border: 1px solid black;
+    background: rgba(0,0,0,0.9);
+    height: 71px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+nav > img
+{
+    padding: 5px 0 0 8px;
+}
+#nav-link
+{
+    font-family: 'Silkscreen', cursive;
+    float: right;
+    text-decoration: none;
+    color: gold;
+    padding: 10px;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+#nav-link:hover
+{
+    text-shadow: 5px 5px 9px white;
+}
+/* ------------------------------------ */
+#wel-sec
+{
+    position: relative;
+    width: 100%;
+    z-index: -99;
+}
+#wel-sec > div
+{
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+#wel-sec > div > p
+{
+    font-family: 'Didact Gothic', sans-serif;
+}
+#wel-sec > div > h2
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#wel-sec > div > a
+{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+}
+#wel-sec > div > a:hover
+{
+    text-shadow: 3px 3px 5px white;
+}
+
+/* About Us */
+section#wel-sec + h2
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+section#wel-sec + h2::after
+{
+    margin: auto;
+    content: "";
+    display: block;
+    background-color: black;
+    width: 90px;
+    height: 2px;
+    margin-top: 8px;
+}
+section#about-us
+{
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+section#about-us > div
+{
+    width: 50%;
+    /* border: 1px solid black; */
+    font-family: 'Didact Gothic', sans-serif;
+}
+section#about-us > div > img
+{
+    border-radius: 50%;
+}
+section#about-us > div > p
+{
+    line-height: 1.6;
+}
+
